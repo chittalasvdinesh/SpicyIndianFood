@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/originals/ea/27/ef/ea27ef43d808e9c6bba6399219bb8be4.jpg" class="logo"
+                        height="80" width="80"><span class="p-1 text-white">Spicy Food</span>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample">
+                    <ul class="navbar-nav ms-auto me-2">
+                        <li class="nav-item"><a class="nav-link text-white" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#cart">Cart
+                                <i class="fa-solid fa-cart-shopping position-relative">
+                                    <sup class="position-absolute top-0 start-5 rounded-pill badge bg-success"
+                                        id="cartCount">0</sup></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <br><br><br><br>
+        <marquee class="mt-5 text-warning">we are following covid health protocols and precautions. We ensure your
+            safety</marquee>
+    </header>
+
+    <main>
+        <section class="container my-2">
+            <div class="row">
+                <h2>Biryani</h2>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4 p-1"
+                    id="NelloreBiryani">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.k1g15jRTR974wZsbmoE1_QHaE7&pid=Api&P=0&w=248&h=166"
+                        alt="fastrack silver watch" class=" w-75 watch-img">
+                    <p>Nellore Biryani</p>
+                    <h5 class="d-inline m-2">Rs.225</h5> <del class="mb-2">Rs.275</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(NelloreBiryani)">Add to
+                        cart</button>
+
+
+
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4 p-1"
+                    id="HyderabadBiryani">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.MnjkS72gcWWDOTfoiUB3tAHaE8&pid=Api&P=0&w=286&h=192"
+                        class="w-75 watch-img" alt="fastrack brown belt watch">
+                    <p>Hyderabad Biryani</p>
+
+                    <h5 class="d-inline m-2">Rs.205</h5> <del class="mb-2">Rs.255</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(HyderabadBiryani)">Add
+                        to
+                        cart</button>
+
+
+                </div>
+                <div class="watch-card text-center col-12  col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="EggBiryani">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.MnjkS72gcWWDOTfoiUB3tAHaE8&pid=Api&P=0&w=286&h=192"
+                        class="w-75" alt="fastrack black watch">
+
+                    <p>Egg Biryani</p>
+                    <h5 class="d-inline m-2">Rs.190</h5> <del class="mb-2">Rs.245</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(EggBiryani)">Add to
+                        cart</button>
+
+
+
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3  my-4"
+                    id="GoanFishbiryani">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.yUadp7sMgolsJ4MlE7AkVwHaG5&pid=Api&P=0&w=168&h=157"
+                        class="watch-img" alt="fastrack grey watch">
+
+                    <p>Goan Fish biryani</p>
+                    <h5 class="d-inline m-2">Rs.225</h5> <del class="mb-2">Rs.275</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(GoanFishbiryani)">Add
+                        to cart</button>
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="MuttonBiryani">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.wvbuAXub4mdBsPERBOaROwHaE8&pid=Api&P=0&w=238&h=160"
+                        class="w-75" alt="fastrack party watch">
+
+                    <p>Mutton biryani</p>
+                    <h5 class="d-inline m-2">Rs.225</h5> <del class="mb-2">Rs.275</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(MuttonBiryani)">Add to
+                        cart</button>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <h2>Pure veg dishes</h2>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4"
+                    id="VegetableKurma">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.8I79U5KCC9rlZymJlPa9vwHaGe&pid=Api&P=0&w=196&h=172"
+                        class="w-75" alt="chocolate dial belt rolex">
+                    <p>Vegetable Kurma</p>
+                    <h5 class="d-inline m-2">Rs.90</h5> <del class="mb-2">Rs.140</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(VegetableKurma)">Add to
+                        cart</button>
+
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4 p-1"
+                    id="VegetableFried">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.5f5bW_Aec0FC0D9anmV-SQHaEo&pid=Api&P=0&w=256&h=161"
+                        class="w-75 mb-5" alt="white dial belt rolex">
+                    <p>Vegetable Fried rice</p>
+                    <h5 class="d-inline m-2">Rs.90</h5> <del class="mb-2">Rs.140</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(VegetableFried)">Add to
+                        cart</button>
+
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4 p-1" id="VegCurry">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.v6mVZuhYptY_lYMxZmL0AwHaHa&pid=Api&P=0&w=300&h=300"
+                        class="w-50 mb-4" alt="blue dial gold rolex">
+                    <p>Veg curry</p>
+                    <h5 class="d-inline m-2">Rs.90</h5> <del class="mb-2">Rs.140</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(VegCurry)">Add to
+                        cart</button>
+
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="VegBiryani">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.-FWmQLMeqUiMfOF2Um8qegHaE8&pid=Api&P=0&w=226&h=151"
+                        class="w-100" alt="blue dial silver rolex">
+                    <p>veg biryani</p>
+                    <h5 class="d-inline m-2">Rs.225</h5> <del class="mb-2">Rs.275</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(VegBiryani)">Add to
+                        cart</button>
+
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="vegMasala">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.IUF92y2QneXu1inGpshJYAHaHa&pid=Api&P=0&w=300&h=300"
+                        class="w-75" alt="silver wrist rolex">
+                    <p>Veg masala</p>
+                    <h5 class="d-inline m-2">Rs.225</h5> <del class="mb-2">Rs.275</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(vegMasala)">Add to
+                        cart</button>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <h2>South Indian spicy</h2>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="ButterDosa">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.LVMdg80ForHft-uSf0Y16AHaFj&pid=Api&P=0&w=218&h=164"
+                        class="w-75" alt="smart watch black">
+                    <p>Butter masala dosa</p>
+                    <h5 class="d-inline m-2">Rs.225</h5> <del class="mb-2">Rs.275</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(ButterDosa)">Add to
+                        cart</button>
+
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="Idli">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.wjJb18dLp1PjJ8PRXNKdSAHaFz&pid=Api&P=0&w=223&h=176"
+                        class="w-75" alt="smart watch blue">
+                    <p>Idli</p>
+                    <h5 class="d-inline m-2">Rs.50</h5> <del class="mb-2">Rs.75</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(Idli)">Add to
+                        cart</button>
+
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="PannerDosa">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.HjnDhIBQj7qDZMHKGIlRrAHaE8&pid=Api&P=0&w=252&h=169"
+                        class="w-75" alt="smart watch grey">
+                    <p>Panner Dosa</p>
+                    <h5 class="d-inline m-2">Rs.75</h5> <del class="mb-2">Rs.105</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(PannerDosa)">Add to
+                        cart</button>
+
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="VegMasala">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.09jhPJ-0KKMJ6mecvF2V6QHaFz&pid=Api&P=0&w=232&h=183"
+                        class="w-75" alt="smart watch pink">
+                    <p>Veg masala</p>
+                    <h5 class="d-inline m-2">Rs.225</h5> <del class="mb-2">Rs.275</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(VegMasala)">Add to
+                        cart</button>
+
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="RDosa">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.vJ2DE5T577ny1NcosqUE8QHaE8&pid=Api&P=0&w=268&h=179"
+                        class="w-75" alt="smart watch white">
+                    <p>Rava Dosa</p>
+                    <h5 class="d-inline m-2">Rs.95</h5> <del class="mb-2">Rs.150</del><br><br>
+                    <span class="bg-success text-white p-1 w-25 align-items-center"><i
+                            class="fa-solid fa-star"></i>4.5</span>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(RDosa)">Add to
+                        cart</button>
+                </div>
+            </div>
+            <hr>
+            <h1 class="text-center">Cart</h1>
+            <div id="cart" class="text-center pt-5 mb-5">
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid bg-dark text-center py-3" id="footer">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-start">
+
+                <a href="#" class="bg-primary py-2 px-3 m-2 text-center rounded-circle"><i
+                        class="fa-brands fa-facebook-f text-white"></i></a>
+                <a href="#" class="bg-primary py-2 px-3 m-2 text-center rounded-circle"><i
+                        class="fa-brands fa-twitter text-white"></i></a>
+                <a href="#" class="bg-primary py-2 px-3 m-2 text-center rounded-circle"><i
+                        class="fa-brands fa-google text-white"></i></a>
+                <a href="#" class="bg-primary py-2 px-3 m-2 text-center rounded-circle"><i
+                        class="fa-brands fa-instagram text-white"></i></a>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <address class="col-12">
+                <p class="text-white">spicyIndia@orders.com</p>
+                <p class="text-white">8-74/b, madiwada center, Akividu, west godavari, Andhra pradesh-534235 </p>
+                <p class="text-white">&copy; Copy right information. All rights reserved</p>
+            </address>
+        </div>
+    </footer>
+
+    <!-- <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

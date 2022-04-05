@@ -1,0 +1,13 @@
+
+.offer{
+    font-size: 23px;
+}
+
+.logo{
+    border-radius: 80px;
+}
+
+.watch-card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 19px;
+}
